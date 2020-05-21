@@ -1,0 +1,496 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>ICCII 2020 | Hyderabad, India</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="Css/bootstrap.min.css">
+  <link rel="stylesheet" href="Fonts/Css/all.min.css">
+  <link rel="stylesheet" href="Css/style.css">
+  <link rel="stylesheet" href="Css/queries.css">
+  <script src="JavaScript/jquery.min.js"></script>
+  <script src="JavaScript/popper.min.js"></script>
+  <script src="JavaScript/bootstrap.min.js"></script>
+  <style>
+    .head {
+      background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("Images/jntu.jpg");
+      height: 60vh;
+      position: relative;
+      background-attachment: fixed;
+      background-repeat: no-repeat;
+      top: 35px;
+    }
+  </style>
+</head>
+
+<body onload="dynamicContent()">
+  <nav class="navbar navbar-expand-lg navbar-light bg-dark">
+    <a class="navbar-brand" href="index.html"><img src="Images/iccii_2018_116_40.jpg" alt="ICCII-2020"></a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
+      aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation" style="color: #fff;"
+      onMouseOver="this.style.color='#2196f3'" onMouseOut="this.style.color='#fff'">
+      <span class="navbar-toggler-icon" style="color: #fff;"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavDropdown">
+      <ul class="navbar-nav">
+        <li class="nav-item active">
+          <a class="nav-link" href="index.html" style="color: #fff;" onMouseOver="this.style.color='#2196f3'"
+            onMouseOut="this.style.color='#fff'">HOME <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <div class="dropdown">
+            <button class="dropbtn nav-link" href="index.html" style="color: #fff; width: 130px;"
+              onMouseOver="this.style.color='#2196f3'" onMouseOut="this.style.color='#fff'">SCHEDULE <i
+                class="fas fa-caret-down"></i></button>
+            <div class="dropdown-content">
+              <a href="#">MAIN CONFERENCE SCHEDULE</a>
+              <a class="dropdown-item" href="#">
+                <p class="day1">DAY 1, 14<sup>th</sup>FEBRUARY, 2020</p>
+              </a>
+              <a href="#">
+                <p class="day2">DAY 2, 15<sup>th</sup>FEBRUARY, 2020</p>
+              </a>
+            </div>
+          </div>
+        </li>
+        <li class="nav-item">
+          <div class="dropdown">
+            <button class="dropbtn nav-link" href="index.html" style="color: #fff; width: 150px;"
+              onMouseOver="this.style.color='#2196f3'" onMouseOut="this.style.color='#fff'">COMMITTEES <i
+                class="fas fa-caret-down"></i></button>
+            <div class="dropdown-content">
+              <a class="dropdown-item" href="speakers.html">OUR SPEAKERS</a>
+              <a class="dropdown-item" href="programChair.html">PROGRAM CHAIR</a>
+              <a class="dropdown-item" href="programCommittee.html">PROGRAM COMMITTEE</a>
+              <a class="dropdown-item" href="iac.html">INTERNATIONAL ADVISORY COMMITTEE</a>
+              <a class="dropdown-item" href="advisoryCommittee.html">ADVISORY COMMITTEE</a>
+              <a class="dropdown-item" href="editorialCommittee.html">EDITORIAL COMMITTEE</a>
+              <a class="dropdown-item" href="technicalCommittee.html">TECHNICAL COMMITTEE</a>
+              <a class="dropdown-item" href="webPublicity.html">WEB AND PUBLICITY COMMITTEE</a>
+            </div>
+          </div>
+        </li>
+        <li class="nav-item">
+          <div class="dropdown">
+            <button class="dropbtn nav-link" href="index.html" style="color: #fff; width: 189px;"
+              onMouseOver="this.style.color='#2196f3'" onMouseOut="this.style.color='#fff'">IMPORTANT
+              DATES <i class="fas fa-caret-down"></i></button>
+            <div class="dropdown-content">
+              <a class="dropdown-item">Submission of ManuScript : <p class="subDate">20th January, 2020
+                </p></a>
+              <a class="dropdown-item">Notification of Acceptance : <p class="notiDate">30th January, 2020
+                </p></a>
+              <a class="dropdown-item">Camera Ready Copy : <p class="camReady">5th February, 2020</p></a>
+              <a class="dropdown-item">Registration ends : <p class="regisEnds">10th February, 2020</p>
+              </a>
+              <a class="dropdown-item">Conference : <p class="conference">14th & 15th February</p></a>
+            </div>
+          </div>
+        </li>
+        <li class="nav-item">
+          <div class="dropdown">
+            <button class="dropbtn nav-link" href="index.html" style="color: #fff; width: 160px;"
+              onMouseOver="this.style.color='#2196f3'" onMouseOut="this.style.color='#fff'">REGISTRATION <i
+                class="fas fa-caret-down"></i></button>
+            <div class="dropdown-content">
+              <a class="dropdown-item" href="https://www.easychair.org/account/signin?l=Ia7n0FINPMJm0A41AnfnBD">PAPER
+                SUBMISSION</a>
+              <a class="dropdown-item" href="venue.html">CONFERENCE VENUE</a>
+              <a class="dropdown-item" href="#">ACCOMMODATION</a>
+            </div>
+          </div>
+        </li>
+        <li class="nav-item">
+          <div class="dropdown">
+            <button class="dropbtn nav-link" href="index.html" style="color: #fff; width: 140px;"
+              onMouseOver="this.style.color='#2196f3'" onMouseOut="this.style.color='#fff'">QUICK
+              LINKS <i class="fas fa-caret-down"></i></button>
+            <div class="dropdown-content">
+              <a class="dropdown-item" href="Files/Brouchure.pdf">BROUCHER</a>
+              <a class="dropdown-item" href="Files/ICCII-2020 template.doc">TEMPLATE</a>
+              <a class="dropdown-item" href="presentationRules.html">PRESENTATION RULES</a>
+              <a class="dropdown-item" href="#">PLAGARIS POLICY</a>
+              <a class="dropdown-item" href="#">REGISTRATION FORM</a>
+              <a class="dropdown-item" href="#">COPYRIGHT FORM</a>
+            </div>
+          </div>
+        </li>
+        <li><a href="#" target="_self" roll="button" id="lbtn" class="btnContact">CONTACT US</a> </li>
+        <li></li>
+      </ul>
+    </div>
+  </nav>
+  <div class="contact container" id="log">
+    <div class=" jumbotron">
+      <div class="close"><a href="#" roll="button" id="btn">X</a></button></div>
+      <h1>CONTACT US</h1>
+
+      <div class="row">
+        <div class="col-sm-4 col1">
+          <h4>Department of Computer Science and Engineering</h4>
+          <p>JNTUH College of Engineering<br>Kukatpally,<br>Hyderabad - 500085,<br>Telangana, India.</p>
+          <p class="mob1">Mobile No : +91 9989726679</p>
+          <p class="mob2">Mobile No : +91 9885369108</p>
+          <p class="mob3">Mobile No : +91 9959305363</p>
+          <p class="mob4">Mobile No : +91 9701771010</p>
+          <p class="email">Email : convenericcii2020@gmail.com</p>
+        </div>
+        <div class="col-sm-4 col2">
+          <h4>How to Reach US</h4>
+          <h3>From Secunderabad :</h3>
+          <p>RTC Bus No : 10KP, 10KV, 17/226, 17HN/47L, 219 224HS, 226, 226J, 226M, 31P, 31V.</p>
+          <br>
+          <h3>From Koti :</h3>
+          <p>RTC Bus No : 225, 225D, 218.</p>
+          <h3>Bus Stop : <span>
+              <h5>JNTU (After KPHB).</h5>
+            </span></h3>
+        </div>
+        <div class="col-sm-4">
+          <h4>Map</h4>
+          <div class="mapouter">
+            <div class="gmap_canvas">
+              <iframe width="auto" height="256px" id="gmap_canvas"
+                src="https://maps.google.com/maps?q=Computer%20sience%20and%20engineering%20depeartment%20jntu&t=&z=13&ie=UTF8&iwloc=&output=embed"
+                frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
+            </div>
+            <style>
+            </style>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <section class="head">
+    <div class="container">
+      <div class="row headText">
+        <h1>
+          4th International Conference on Computational Intelligence and Informatics (ICCII-2020)
+          14th & 15th February, 2020
+        </h1>
+        <h3>
+          Jawaharlal Nehru Technological University, Hyderabad
+        </h3>
+      </div>
+      <div class="row">
+        <div class="col-sm-3">
+          &nbsp;
+        </div>
+        <div class="col-sm-2 btns">
+          <a href="Files/Brouchure.pdf" class="validBtn">Broucher</a>
+        </div>
+        <div class="col-sm-1"></div>
+        <div class="col-sm-3 btns">
+          <a href="https://www.easychair.org/account/signin?l=Ia7n0FINPMJm0A41AnfnBD" class="ghostBtn">Paper
+            Submission</a>
+        </div>
+      </div>
+  </section>
+  <section class="conference">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-6">
+          <h3>About ICCII-2020</h3>
+          <p class="about">
+            Welcome to the official website of the International
+            Conference on Computational Intelligence and
+            Informatics-2020(ICCII-2020)will be held during 14th &amp; 15th February 2020 at JNTU, Hyderabad.
+            ICCII 2020, is to bring together innovative academics and industrial experts in the field of
+            Computer Science and Electronics Engineering to a common forum. Accepted Papers will be
+            published in Scoupus indexed International
+            Journal of Innovative Technology and Exploring Engineering (IJITEE).
+          </p>
+          <a href="about.html" class="validBtn learnMore">Learn More</a>
+        </div>
+        <div class="col-sm-6">
+          <img class="mySlides responsive" src="Images/iccii_Images/1.jpg">
+          <img class="mySlides responsive" src="Images/iccii_Images/2.jpg">
+          <img class="mySlides responsive" src="Images/iccii_images/3.jpg">
+          <img class="mySlides responsive" src="Images/iccii_images/4.jpg">
+          <img class="mySlides responsive" src="Images/iccii_images/5.jpg">
+          <img class="mySlides responsive" src="Images/iccii_images/9.jpg">
+          <img class="mySlides responsive" src="Images/iccii_images/10.jpg">
+          <img class="mySlides responsive" src="Images/iccii_images/11.jpg">
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="jntu">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-6">
+          <img src="./Images/jntu.jpg" alt="Jntu Image" class="jntuSmallImg">
+        </div>
+        <div class="col-sm-6">
+          <h3>About JNTU</h3>
+          <p class="about">
+            Situated in the heart of the city at Kukatpally,
+            Hyderabad a major landmark- Jawaharlal Nehru Technological
+            University, Hyderabad has an environment of academic excellence
+            with A Grade accreditation by NAAC (National Assessment and
+            Accreditation Council). Bringing the spark of knowledge to young
+            minds and instilling a new confidence and vigour to face the world,
+            it is providing quality education for nearly 4 decades.
+            The University is dedicated to provide for the advancement
+            of learning and knowledge in Engineering & Technology,
+            Physical and Social Sciences,both by teaching, and research.
+          </p>
+          <a href="http://jntuh.ac.in/" class="validBtn learnMore">Learn More</a>
+          <p style="margin-bottom: 5%;"></p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="jntuhceh">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-6">
+          <h3>About JNTUHCEH</h3>
+          <p class="about">
+            The College was established as Nagarjuna Sagar Engineering
+            College in 1965. With the formation of Jawaharlal Nehru
+            Technological University on 2nd October 1972, it became a
+            constituent college of the JNT University and was later renamed
+            as JNTUH College of Engineering, Hyderabad. The college is
+            offering technical education in major engineering fields and
+            is sustaining, improving its repute of undergraduate programmes,
+            expanding need based post graduate and research programmmes with
+            global outlook, synergizing teaching and research for social relevance.
+          </p>
+          <a href="https://jntuhceh.ac.in/" class="validBtn learnMore">Learn More</a>
+        </div>
+        <div class="col-sm-6">
+          <img src="Images/jntuhceh.jpg" alt="JNTUHCEH Image" class="jntucehSmallImg">
+        </div>
+      </div>
+    </div>
+  </section>`
+  <section class="icons">
+    <div class="container">
+      <div class="row">
+        <h1>ICCII-2020 Invites Papers of research on the topics of the following tracks</h1>
+      </div>
+      <div class="row">
+        <div class="col-sm-2 icons"></div>
+        <div class="col-sm-2 icons"><i class="fas fa-database i1"></i><br> DATA MINING AND DATA WEARHOUSING</div>
+        <div class="col-sm-2 icons"><i class="fas fa-tv i1"></i><br> HIGH PERFORMANCE COMPUTING</div>
+        <div class="col-sm-2 icons"><i class="fas fa-mobile i1"></i><br> PARALLEL AND DISTRIBUTED COMPUTING</div>
+        <div class="col-sm-2 icons"><i class="far fa-snowflake i1"></i><br> COMPUTATIONAL INTELLIGENCE</div>
+        <div class="col-sm-2 icons"></div>
+      </div>
+      <div class="row">
+        <div class="col-sm-2 icons"></div>
+        <div class="col-sm-2 icons"><i class="fas fa-star i2"></i><br> SOFT COMPUTING</div>
+        <div class="col-sm-2 icons"><i class="fas fa-server i2"></i><br> BIG DATA</div>
+        <div class="col-sm-2 icons"><i class="fas fa-cloud i2"></i><br> CLOUD COMPUTING</div>
+        <div class="col-sm-2 icons"><i class="fas fa-microchip i2"></i><br> GRID COMPUTING</div>
+        <div class="col-sm-2 icons"></div>
+      </div>
+      <div class="row">
+        <div class="col-sm-2 icons"></div>
+        <div class="col-sm-2 icons"><i class="fas fa-tachometer-alt i3"></i><br> COGNITIVE COMPUTING</div>
+        <div class="col-sm-2 icons"><i class="fas fa-street-view i3"></i><br> IMAGE PROCESSING</div>
+        <div class="col-sm-2 icons"><i class="fas fa-wifi i3"></i><br> WIRELESS NETWORKS</div>
+        <div class="col-sm-2 icons"><i class="fab fa-facebook-square i3"></i><br> SOCIAL NETWORKS</div>
+        <div class="col-sm-2 icons"></div>
+      </div>
+      <div class="row">
+        <div class="col-sm-2 icons"></div>
+        <div class="col-sm-2 icons"><i class="fas fa-wifi i4"></i><br> WIRELESS SENSOR NETWORKS</div>
+        <div class="col-sm-2 icons"><i class="fas fa-info-circle i4"></i><br> INFORMATION AND NETWORK SECURITY</div>
+        <div class="col-sm-2 icons"><i class="fab fa-internet-explorer i4"></i><br> WEB SECURITY</div>
+        <div class="col-sm-2 icons"><i class="fas fa-cogs i4"></i><br> INTERNET OF THINGS</div>
+        <div class="col-sm-2 icons"></div>
+      </div>
+      <div class="row">
+        <div class="col-sm-2 icons"></div>
+        <div class="col-sm-2 icons"><i class="fas fa-chart-pie i5"></i><br> BIO INFORMATICS</div>
+        <div class="col-sm-2 icons"><i class="fas fa-chart-area i5"></i><br> GEO INFORMATICS</div>
+        <div class="col-sm-2 icons"><i class="fas fa-tv i5"></i><br> COMPUTER NETWORKS</div>
+        <div class="col-sm-2 icons"><i class="fas fa-chart-bar i5"></i><br> OTHER TOPICS RELATED TO ICCII THEME
+        </div>
+        <div class="col-sm-2 icons"></div>
+      </div>
+  </section>
+  <section class="patrons">
+    <div class="container">
+      <h1>Chief Patrons and Patron</h1>
+      <div class="row">
+        <div class="col-sm-3">
+          <img src="./Images/vc.jpg" alt="ViceChancellorImage" class="responsive patron">
+          <div class="patronText">
+            <a href="https://jntuh.ac.in/vice-chancellor">
+              <h4>Sri Jayesh Ranjan, IAS</h4>
+              In-charge Vice-Chancellor
+            </a>
+          </div>
+        </div>
+        <div class="col-sm-1"></div>
+        <div class="col-sm-3">
+          <img src="Images/rector.jpg" alt="RectorImage" class="responsive patron">
+          <div class="patronText">
+            <a href="https://jntuh.ac.in/rector">
+              <h4>Dr. A. Govardhan</h4>
+              Rector, In-charge Registrar
+              JNTU Hyderabad
+            </a>
+          </div>
+        </div>
+        <div class="col-sm-1"></div>
+        <div class="col-sm-3">
+          <img src="Images/patron.jpeg" alt="PrincipalImage" class="responsive patron">
+          <div class="patronText">
+            <a href="https://jntuhceh.ac.in/principal">
+              <h4>Dr. E Saibaba Reddy</h4>
+              Professor & Principal,
+              JNTUHCEH
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="linkAndDates">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-6">
+          <h1>
+            Quick Links
+          </h1>
+          <p>
+            <a href="Files/Brouchure.pdf" class="qlinks">
+              Download Brouchure
+              <span></span>
+              <span></span>
+              <span></span>
+              <span></span>
+            </a>
+            <a href="Files/ICCII-2020 template.doc" class="qlinks">
+              Download Template
+              <span></span>
+              <span></span>
+              <span></span>
+              <span></span>
+            </a>
+          </p>
+        </div>
+        <div class="col-lg-6">
+          <h1>
+            Save The Dates
+          </h1>
+          <table class="table table-borderless">
+
+            <tbody>
+              <tr>
+                <th>Final Deadline for Submission of Full Manuscript</th>
+                <th>:</th>
+                <td>20th January 2020</td>
+              </tr>
+              <tr>
+                <th>Notification of Acceptance</th>
+                <th>:</th>
+                <td colspan="2">30th January, 2020</td>
+              </tr>
+              <tr>
+                <th>Registration ends</th>
+                <th>:</th>
+                <td colspan="2">10th February, 2020</td>
+              </tr>
+              <tr>
+                <th>Conference</th>
+                <th>:</th>
+                <td colspan="2">14th & 15th February, 2020 </br>Department of CSE,
+                  JNTUHCE, Hyderabad</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="displayImages">
+    <div class="container">
+      <div>
+        <ul class="iccii clearfix">
+          <li>
+            <figure class="iccii-photo">
+              <img src="./Images/iccii_images/1.jpg" alt="image1">
+            </figure>
+          </li>
+          <li>
+            <figure class="iccii-photo">
+              <img src="./Images/iccii_images/2.jpg" alt="image2">
+            </figure>
+          </li>
+          <li>
+            <figure class="iccii-photo">
+              <img src="./Images/iccii_images/3.jpg" alt="image3">
+            </figure>
+          </li>
+          <li>
+            <figure class="iccii-photo">
+              <img src="./Images/iccii_images/4.jpg" alt="image4">
+            </figure>
+          </li>
+        </ul>
+        <ul class="iccii clearfix">
+          <li>
+            <figure class="iccii-photo">
+              <img src="./Images/iccii_images/5.jpg" alt="image5">
+            </figure>
+          </li>
+          <li>
+            <figure class="iccii-photo">
+              <img src="./Images/iccii_images/9.jpg" alt="image6">
+            </figure>
+          </li>
+          <li>
+            <figure class="iccii-photo">
+              <img src="./Images/iccii_images/10.jpg" alt="image7">
+            </figure>
+          </li>
+          <li>
+            <figure class="iccii-photo">
+              <img src="./Images/iccii_images/11.jpg" alt="image8">
+            </figure>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </section>
+  <footer class="container">
+    <div class="row">
+      <div class="col-sm-6">
+        <div class="row">
+          <div class="col-sm-3 footLogo" style="margin-top: 2%">
+            <a href="https://jntuh.ac.in/"><img src="Images/jntuhlogo.png" alt="JntuLogo"></a>
+          </div>
+          <div class="col-sm-9 counter" style="margin-top: 10%">
+            <a href="https://www.webfreecounter.com/" target="_blank">
+              <img src="https://www.webfreecounter.com/hit.php?id=gvxonqp&nd=6&style=1" alt="visitor counter">
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-6">
+        <div class="row " style="margin: 10% 0;">
+          <div class="col-sm-6">
+            <a href="http://www.iccii.net/images/jntuhlogo.png" style="color: #fff;" class="footLink">2020 Â© All
+              Rights Reserved</a>
+          </div>
+          <div class="col-sm-6">
+            <a href="https://jntuh.ac.in/" style="color: #fff;">JNTUH, Main website</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </footer>
+
+
+
+
+  <script src="JavaScript/indexJs.js"></script>
+</body>
+
+</html>

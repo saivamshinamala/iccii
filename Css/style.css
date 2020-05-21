@@ -1,0 +1,486 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html body {
+    scroll-behavior: smooth;
+    z-index: 1;
+}
+
+section {
+    margin-bottom: 4%;
+    padding-top: 4%;
+    padding-bottom: 2%;
+}
+
+/* Navigation */
+.navbar {
+    position: fixed;
+    width: 100%;
+    z-index: 1;
+}
+
+.navbar-brand {
+    margin-right: 25%;
+    width: 100%;
+}
+
+.nav-link {
+    font-size: 110%;
+    width: 100%;
+}
+
+.dropdown-toggle {
+    color: blanchedalmond;
+}
+
+.dropbtn {
+    font-size: 18px;
+    border: none;
+    background: none;
+    color: #fff;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown:hover .dropbtn {
+    color: #2196f3;
+}
+
+.btnContact {
+    padding: 5px;
+    border: 1px solid;
+    display: block;
+    width: 110px;
+}
+
+.btnContact:hover {
+    box-shadow: 0 0 40px #2196f3;
+    color: #fff;
+    background: #2196f3;
+    text-decoration: none;
+    transition: 0.2s;
+    border: 1px solid #2196f3;
+}
+
+.day1 {
+    display: inline;
+}
+
+.day2 {
+    display: inline;
+}
+
+.subDate {
+    display: inline;
+}
+
+.notiDate {
+    display: inline;
+}
+
+.camReady {
+    display: inline;
+}
+
+.regisEnds {
+    display: inline;
+}
+
+.conference {
+    display: inline;
+}
+
+/* Contact Us */
+.contact {
+    display: none;
+    padding-top: 8%;
+    z-index: 9999;
+}
+
+.contact h1 {
+    text-align: center;
+    margin-bottom: 3%;
+    font-size: 250%;
+    font-weight: 600;
+}
+
+.contact h3 {
+    text-align: center;
+    font-size: 150%;
+    font-weight: 500;
+}
+
+.contact h4 {
+    text-align: center;
+    font-size: 150%;
+    font-weight: bold;
+}
+
+.contact h5 {
+    font-size: 120%;
+}
+
+.contact p {
+    text-align: center;
+    font-size: 100%;
+}
+
+/* Head Body */
+.headText h1 {
+    text-align: center;
+    padding-top: 4%;
+    color: #fff;
+    font-weight: 300;
+    font-size: 250%;
+}
+
+.headText h3 {
+    margin: 0 auto 8% auto;
+    font-weight: 400;
+    font-size: 150%;
+    color: #fff;
+}
+
+/* Head Buttons */
+.validBtn {
+    text-align: center;
+    text-decoration: none;
+    color: aliceblue;
+    font-size: 120%;
+    font-weight: 100;
+    border: 1px solid #2196f3;
+    padding: 8% 5%;
+    font-size: 130%;
+    display: block;
+    background: #2196f3;
+}
+
+.validBtn:hover {
+    background: transparent;
+    transition: 0.3s;
+    box-shadow: 0 0 10px #2196f3;
+    border: 1px solid #2196f3;
+    color: #2196f3;
+    text-decoration: none;
+}
+
+.ghostBtn {
+    text-align: center;
+    text-decoration: none;
+    color: aliceblue;
+    font-size: 120%;
+    font-weight: 100;
+    width: 80%;
+    border: 1px solid #2196f3;
+    padding: 5% 5%;
+    font-size: 130%;
+    display: block;
+}
+
+.ghostBtn:hover {
+    color: #2196f3;
+    transition: 0.3s;
+    box-shadow: 0 0 10px #2196f3;
+    text-decoration: none;
+}
+
+/* Jntu */
+.conference {
+    margin-top: 7%;
+    background-color: rgba(197, 255, 255, 0.71);
+    overflow: hidden;
+}
+
+.conference h3 {
+    text-align: center;
+    margin-bottom: 6%;
+}
+
+/* Images Courosel */
+.mySlides {
+    height: auto;
+    width: 85%;
+    margin: 10% auto 0 2%;
+    box-shadow: 0 0 30px;
+}
+
+/* About Text */
+.about {
+    font-size: 111%;
+    line-height: 160%;
+}
+
+.learnMore {
+    width: 150px;
+    padding: 2%;
+}
+
+/* About Jntu */
+.jntu h3 {
+    text-align: center;
+    margin-bottom: 6%;
+}
+
+.jntuSmallImg {
+    width: 100%;
+    height: auto;
+    margin-top: 20%;
+    box-shadow: 0 0 30px;
+}
+
+.jntu .learnMore {
+    float: right
+}
+
+/* Jntuhceh */
+.jntuhceh {
+    background-color: rgba(197, 255, 255, 0.71);
+    overflow: hidden;
+}
+
+.jntuhceh h3 {
+    text-align: center;
+    margin-bottom: 6%;
+}
+
+.jntucehSmallImg {
+    height: auto;
+    width: 85%;
+    margin: 10% auto 0 auto;
+    left: 20px;
+    box-shadow: 0 0 30px;
+}
+
+/* icons */
+.icons {
+    text-align: center;
+    margin-bottom: 5%
+}
+
+.icons i {
+    font-size: 240%;
+    margin-bottom: 15%;
+}
+
+.icons h1 {
+    font-size: 200%;
+    font-weight: 400;
+    margin: 0 auto 5% auto;
+}
+
+/* Patrons */
+.patron {
+    width: 300px;
+    height: 300px;
+}
+
+.patrons h1 {
+    text-align: center;
+    margin: 0 auto 5% auto;
+    font-size: 200%;
+    font-weight: 400;
+}
+
+.patronText {
+    text-align: center;
+    margin: 5% auto 0 auto;
+    width: 100%;
+}
+
+/* Links and Dates */
+.linkAndDates {
+    background-color: rgba(197, 255, 255, 0.71);
+    overflow: hidden;
+}
+
+.qlinks {
+    font-size: 140%;
+    position: relative;
+    text-decoration: none;
+    padding: 20px;
+    display: block;
+    overflow: hidden;
+    width: 300px;
+    margin: 0 auto 0 auto;
+    text-align: center;
+}
+
+.qlinks:nth-child(1) {
+    margin-top: 10%;
+}
+
+.qlinks:nth-child(2) {
+    margin-top: 6%;
+}
+
+.qlinks:hover {
+    text-decoration: none;
+    box-shadow: 0px 0px 20px #2196f3;
+    transition: .3s;
+    transition-delay: .8s;
+
+}
+
+.qlinks span {
+    position: absolute;
+}
+
+.qlinks span:nth-child(1) {
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(90deg, transparent, #2196f3);
+}
+
+.qlinks:hover span:nth-child(1) {
+    left: 0;
+    transition: 0.2s;
+}
+
+.qlinks span:nth-child(2) {
+    position: absolute;
+    right: 0;
+    top: -100%;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(180deg, transparent, #2196f3);
+}
+
+.qlinks:hover span:nth-child(2) {
+    top: 0;
+    transition: 0.2s;
+    transition-delay: 0.2s;
+}
+
+.qlinks span:nth-child(2) {
+    position: absolute;
+    right: 0;
+    top: -100%;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(180deg, transparent, #2196f3);
+}
+
+.qlinks:hover span:nth-child(2) {
+    top: 0;
+    transition: 0.2s;
+    transition-delay: 0.2s;
+}
+
+.qlinks span:nth-child(3) {
+    position: absolute;
+    bottom: 0;
+    right: -100%;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(270deg, transparent, #2196f3);
+}
+
+.qlinks:hover span:nth-child(3) {
+    right: 0;
+    transition: 0.2s;
+    transition-delay: 0.4s;
+}
+
+.qlinks span:nth-child(4) {
+    position: absolute;
+    bottom: -100%;
+    left: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(360deg, transparent, #2196f3);
+}
+
+.qlinks:hover span:nth-child(4) {
+    bottom: 0;
+    transition: 0.2s;
+    transition-delay: 0.6s;
+}
+
+.linkAndDates h1 {
+    text-align: center;
+    margin: 0 auto 5% auto;
+    font-size: 200%;
+    font-weight: 400;
+}
+
+.table {
+    text-align: center;
+}
+
+/* Display Images */
+
+.iccii {
+    list-style: none;
+    width: 100%;
+    bottom: 0;
+}
+
+.iccii li {
+    display: block;
+    float: left;
+    width: 25%;
+}
+
+.iccii-photo {
+    width: 100%;
+    margin: 0;
+    overflow: hidden;
+    background-color: #000;
+}
+
+.iccii-photo img {
+    opacity: 0.7;
+    width: 100%;
+    height: 100%;
+    -webkit-transform: scale(1.15);
+    -ms-transform: scale(1.15);
+    transform: scale(1.15);
+    -webkit-transition: -webkit-transform 0.2s, opacity 0.5s;
+    transition: transform 0.2s, opacity 0.5s;
+}
+
+.iccii-photo img:hover {
+    opacity: 1;
+    -webkit-transform: scale(1.03);
+    -ms-transform: scale(1.03);
+    transform: scale(1.03);
+}
+
+/* Footer */
+footer {
+    background: rgba(42, 42, 42, 0.67);
+    padding-bottom: 0.5%;
+}

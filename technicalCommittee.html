@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>ICCII 2020 | Technical Committee</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="Css/bootstrap.min.css">
+    <link rel="stylesheet" href="Fonts/Css/all.min.css">
+    <link rel="stylesheet" href="Css/style.css">
+    <link rel="stylesheet" href="Css/advisoryCommittee.css">
+    <link rel="stylesheet" href="Css/queries.css">
+    <script src="JavaScript/jquery.min.js"></script>
+    <script src="JavaScript/popper.min.js"></script>
+    <script src="JavaScript/bootstrap.min.js"></script>
+    <style>
+        .head {
+            background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("Images/jntu.jpg");
+            height: 60vh;
+            position: relative;
+            background-attachment: fixed;
+            background-repeat: no-repeat;
+            top: 35px;
+        }
+    </style>
+</head>
+
+<body onload="dynamicContent()">
+    <nav class="navbar navbar-expand-lg navbar-light bg-dark">
+        <a class="navbar-brand" href="index.html"><img src="Images/iccii_2018_116_40.jpg" alt="ICCII-2020"></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
+            aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation" style="color: #fff;"
+            onMouseOver="this.style.color='#2196f3'" onMouseOut="this.style.color='#fff'">
+            <span class="navbar-toggler-icon" style="color: #fff;"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav">
+                <li class="nav-item active">
+                    <a class="nav-link" href="index.html" style="color: #fff;" onMouseOver="this.style.color='#2196f3'"
+                        onMouseOut="this.style.color='#fff'">HOME <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <div class="dropdown">
+                        <button class="dropbtn nav-link" href="index.html" style="color: #fff; width: 130px;"
+                            onMouseOver="this.style.color='#2196f3'" onMouseOut="this.style.color='#fff'">SCHEDULE <i
+                                class="fas fa-caret-down"></i></button>
+                        <div class="dropdown-content">
+                            <a href="#">MAIN CONFERENCE SCHEDULE</a>
+                            <a class="dropdown-item" href="#">
+                                <p class="day1">DAY 1, 14<sup>th</sup>FEBRUARY, 2020</p>
+                            </a>
+                            <a href="#">
+                                <p class="day2">DAY 2, 15<sup>th</sup>FEBRUARY, 2020</p>
+                            </a>
+                        </div>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <div class="dropdown">
+                        <button class="dropbtn nav-link" href="index.html" style="color: #fff; width: 150px;"
+                            onMouseOver="this.style.color='#2196f3'" onMouseOut="this.style.color='#fff'">COMMITTEES <i
+                                class="fas fa-caret-down"></i></button>
+                        <div class="dropdown-content">
+                            <a class="dropdown-item" href="speakers.html">OUR SPEAKERS</a>
+                            <a class="dropdown-item" href="programChair.html">PROGRAM CHAIR</a>
+                            <a class="dropdown-item" href="programCommittee.html">PROGRAM COMMITTEE</a>
+                            <a class="dropdown-item" href="iac.html">INTERNATIONAL ADVISORY COMMITTEE</a>
+                            <a class="dropdown-item" href="advisoryCommittee.html">ADVISORY COMMITTEE</a>
+                            <a class="dropdown-item" href="editorialCommittee.html">EDITORIAL COMMITTEE</a>
+                            <a class="dropdown-item" href="technicalCommittee.html">TECHNICAL COMMITTEE</a>
+                            <a class="dropdown-item" href="webPublicity.html">WEB AND PUBLICITY COMMITTEE</a>
+                        </div>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <div class="dropdown">
+                        <button class="dropbtn nav-link" href="index.html" style="color: #fff; width: 189px;"
+                            onMouseOver="this.style.color='#2196f3'" onMouseOut="this.style.color='#fff'">IMPORTANT
+                            DATES <i class="fas fa-caret-down"></i></button>
+                        <div class="dropdown-content">
+                            <a class="dropdown-item">Submission of ManuScript : <p class="subDate">20th January, 2020
+                                </p></a>
+                            <a class="dropdown-item">Notification of Acceptance : <p class="notiDate">30th January, 2020
+                                </p></a>
+                            <a class="dropdown-item">Camera Ready Copy : <p class="camReady">5th February, 2020</p></a>
+                            <a class="dropdown-item">Registration ends : <p class="regisEnds">10th February, 2020</p>
+                            </a>
+                            <a class="dropdown-item">Conference : <p class="conference">14th & 15th February</p></a>
+                        </div>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <div class="dropdown">
+                        <button class="dropbtn nav-link" href="index.html" style="color: #fff; width: 160px;"
+                            onMouseOver="this.style.color='#2196f3'" onMouseOut="this.style.color='#fff'">REGISTRATION
+                            <i class="fas fa-caret-down"></i></button>
+                        <div class="dropdown-content">
+                            <a class="dropdown-item"
+                                href="https://www.easychair.org/account/signin?l=Ia7n0FINPMJm0A41AnfnBD">PAPER
+                                SUBMISSION</a>
+                            <a class="dropdown-item" href="venue.html">CONFERENCE VENUE</a>
+                            <a class="dropdown-item" href="#">ACCOMMODATION</a>
+                        </div>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <div class="dropdown">
+                        <button class="dropbtn nav-link" href="index.html" style="color: #fff; width: 140px;"
+                            onMouseOver="this.style.color='#2196f3'" onMouseOut="this.style.color='#fff'">QUICK
+                            LINKS <i class="fas fa-caret-down"></i></button>
+                        <div class="dropdown-content">
+                            <a class="dropdown-item" href="Files/Brouchure.pdf">BROUCHER</a>
+                            <a class="dropdown-item" href="Files/ICCII-2020 template.doc">TEMPLATE</a>
+                            <a class="dropdown-item" href="presentationRules.html">PRESENTATION RULES</a>
+                            <a class="dropdown-item" href="#">PLAGARIS POLICY</a>
+                            <a class="dropdown-item" href="#">REGISTRATION FORM</a>
+                            <a class="dropdown-item" href="#">COPYRIGHT FORM</a>
+                        </div>
+                    </div>
+                </li>
+                <li><a href="#" target="_self" roll="button" id="lbtn" class="btnContact">CONTACT US</a> </li>
+                <li></li>
+            </ul>
+        </div>
+    </nav>
+    <div class="contact container" id="log">
+        <div class=" jumbotron">
+            <div class="close"><a href="#" roll="button" id="btn">X</a></button></div>
+            <h1>CONTACT US</h1>
+
+            <div class="row">
+                <div class="col-sm-4 col1">
+                    <h4>Department of Computer Science and Engineering</h4>
+                    <p>JNTUH College of Engineering<br>Kukatpally,<br>Hyderabad - 500085,<br>Telangana, India.</p>
+                    <p class="mob1">Mobile No : +91 9989726679</p>
+                    <p class="mob2">Mobile No : +91 9885369108</p>
+                    <p class="mob3">Mobile No : +91 9959305363</p>
+                    <p class="mob4">Mobile No : +91 9701771010</p>
+                    <p class="email">Email : convenericcii2020@gmail.com</p>
+                </div>
+                <div class="col-sm-4 col2">
+                    <h4>How to Reach US</h4>
+                    <h3>From Secunderabad :</h3>
+                    <p>RTC Bus No : 10KP, 10KV, 17/226, 17HN/47L, 219 224HS, 226, 226J, 226M, 31P, 31V.</p>
+                    <br>
+                    <h3>From Koti :</h3>
+                    <p>RTC Bus No : 225, 225D, 218.</p>
+                    <h3>Bus Stop : <span>
+                            <h5>JNTU (After KPHB).</h5>
+                        </span></h3>
+                </div>
+                <div class="col-sm-4">
+                    <h4>Map</h4>
+                    <div class="mapouter">
+                        <div class="gmap_canvas">
+                            <iframe width="auto" height="256px" id="gmap_canvas"
+                                src="https://maps.google.com/maps?q=Computer%20sience%20and%20engineering%20depeartment%20jntu&t=&z=13&ie=UTF8&iwloc=&output=embed"
+                                frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
+                        </div>
+                        <style>
+                        </style>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <section class="container g-pt-100 g-pb-40">
+        <h1 class="heading">Technical Committee</h1>
+        <em class="d-block g-font-style-normal g-font-size-16 g-color-Blue ">
+            <p style="line-height:120%">
+                <b>- Dr. C.A. Murthy, ISI Calcutta, Kolkata, India</b><br><br>
+                <b>- Dr. K. Tiwari, IIT, Kharagpur, India</b><br><br>
+                <b>- Dr. Chandra Sekhar, IIT Madras, Chennai, India</b><br><br>
+                <b>- Dr. Suresh Sundaram, NTU, Singapore</b><br><br>
+                <b>- Dr.Lipo Wang, NTU, Singapore</b><br><br>
+                <b>- Dr. Amit Mitra, IIT, Kanpur, India</b><br><br>
+                <b>- Dr.Aruna Tiwari, IIT, Indore, India</b><br><br>
+                <b>- Dr. Nagesh Kumar, IISc, Bangalore, India</b><br><br>
+                <b>- Dr.Sushila Devi, IISc, Bangalore, India</b><br><br>
+                <b>- Dr.Hota, BITS Pilani, Hyderabad, India</b><br><br>
+                <b>- Dr.Chilukuri Mohan, Syracuse University, Syracuse, USA</b><br><br>
+                <b>- Dr.Debjani Chakraborty, IIT, Kharagpur, India</b><br><br>
+                <b>- Dr. K. Kalra, IIT Kanpur, Kanpur, India</b><br><br>
+                <b>- Dr. Vasant Pandian, University Putra Malaysia, Malaysia</b><br><br>
+                <b>- Dr. Oscar Castillo, Tijuana Institute of Technology, Chula Vista CA, USA</b><br><br>
+                <b>- Dr.Indranil Bose, IIM Calcutta, Kolkata, India</b><br><br>
+                <b>- Dr.Bapi Raju, IIIT Hyderabad, India</b><br><br>
+                <b>- Dr. Brijesh Verma, CQ University, Brisbane, Australia</b><br><br>
+                <b>- Dr. R. Rao, UOHYD, Hyderabad, India</b><br><br>
+                <b>- Dr. L. Deekshatulu, IDRBT, Hyderabad, India</b><br><br>
+                <b>- Dr. Arun Agarwal, UOHYD, Hyderabad, India</b><br><br>
+                <b>- Dr. Arnab Laha, IIM, Ahmedabad, India</b><br><br>
+                <b>- Dr.Biplav Srivastava, IBM Research, New Delhi, India</b><br><br>
+                <b>- Dr. K. Mohanty, IIM, Lucknow, India</b><br><br>
+                <b>- Dr.Janga Reddy, IIT Bombay, Mumbai, India</b><br><br>
+                <b>- Dr. C. Deo, IIT Bombay, Mumbai, India</b><br><br>
+                <b>- Dr. Pankaj Dutta, IIT Bombay, Mumbai, India</b><br><br>
+                <b>- Dr. Usha Anantha Kumar, IIT Bombay, Mumbai, India</b><br><br>
+                <b>- Dr.Faiz Hamid, IIT, Kanpur, India</b><br><br>
+                <b>- Dr.Chakraverty, NIT Rourkela, Rourkela</b><br><br>
+                <b>- Dr.DebanathBattacharyya, India</b><br><br>
+                <b>- Dr. Fujita, Iwate Prefectural University, Iwate, Japan</b><br><br>
+                <b>- Dr. Dries Benoit, Ghent University, Ghent, Belgium</b><br><br>
+                <b>- Dr. A. Arul, Philips Electronics Singapore, Singapore</b><br><br>
+                <b>- Dr. Pawan Lingars, Saint Mary's University Halifax, Canada</b><br><br>
+                <b>- Dr.Amuelson Hong, Oriental Institute of Technology, Taiwan</b><br><br>
+                <b>- Dr.Zhihua Cui, Taiyuan University of Science and Technology, Taiyuan, China</b><br><br>
+                <b>- Dr.Balasubramaniam Jayaram, IIT, Hyderabad, India</b><br><br>
+                <b>- Dr.SamanHalgamuge, The University of Melbourne, Melbourne, Australia</b><br><br>
+                <b>- Dr.Nischal Verma, IIT, Kanpur, India</b><br><br>
+                <b>- Dr.Laxmidhar Behera, IIT, Kanpur, India</b><br><br>
+                <b>- Dr.YaoChuJin, University of Surrey, Guildford, England</b><br><br>
+                <b>- Dr. Vineeth Balasubramian, IIT, Hyderabad, India</b><br><br>
+                <b>- Dr. Atul Negi, Professor, University of Hyderabad, India</b><br><br>
+                <b>- Dr. Naresh Kumar, NRSC, Hyderabad, India</b><br><br>
+                <b>- Dr. Maurice Clerc, FranchRoderich Gross, England</b><br><br>
+                <b>- Dr. Syed Basha, India Kalyanmoy Deb, India SamanHalgamuge, Australia</b><br><br>
+                <b>- Dr.Jeng-Shyang Pan, Talwan Peng Shi, UK Javier Del Ser, Spain</b><br><br>
+                <b>- Dr. Leandro Dos Santos Coelho, Brazil</b><br><br>
+                <b>- Dr. S Pattanaik, India</b><br><br>
+                <b>- Dr. Gerardo Beni, USA K. Parsopoulos, Greece</b><br><br>
+                <b>- Dr.Lingfeng Wang, China</b><br><br>
+                <b>- Dr. Athanasios V. Vasilakos</b><br><br>
+                <b>- Dr. Athens Pei-Chann Chang, Taiwan</b><br><br>
+                <b>- Dr.Chilukuri K. Mohan, USA SaeidNahavandi, Australia</b><br><br>
+                <b>- Dr. Abbas Khosravi, Australia Almoataz</b><br><br>
+                <b>- Dr. Youssef Abdelaziz, Egypt K.T. Chaturvedi, India</b><br><br>
+                <b>- Dr. K. Tiwari, India</b><br><br>
+                <b>- Dr.Yuhui Shi, China</b><br><br>
+                <b>- Dr. Dipankar Dasgupta, USA</b><br><br>
+                <b>- Dr.Lakhmi Jain, Australia</b><br><br>
+                <b>- Dr. Z. Gao, Finland</b><br><br>
+                <b>- Dr. Juan Luis Fernandez Martinez, Spain Oscar Castillo, Mexico</b><br><br>
+                <b>- Dr.HeitorSilverio Lopes, Brazil</b><br><br>
+                <b>- Dr. K. Udgata, India</b><br><br>
+                <b>- Dr. Namrata Khemka, USA</b><br><br>
+                <b>- Dr. K. Venayagamoorty, USA</b><br><br>
+                <b>- Dr.Zong Woo Geem, USA</b><br><br>
+                <b>- Dr. Ying Tan, China</b><br><br>
+                <b>- Dr. G. Ponnambalam, Malaysia</b><br><br>
+                <b>- Dr. Halina Kwasnicka, Poland</b><br><br>
+                <b>- Dr. A. Abido, Saudi Arabia</b><br><br>
+                <b>- Dr. Richa Singh, India</b><br><br>
+                <b>- Dr.Manjaree Pandit, India</b><br><br>
+                <b>- Dr. Hai Bin Duan, China</b><br><br>
+                <b>- Dr.Delin Luo, China</b><br><br>
+                <b>- Dr. Ravi, India</b><br><br>
+                <b>- Dr.Basker, India</b><br><br>
+                <b>- Dr.Rammohan, South Korea</b><br><br>
+                <b>- Dr.Munesh Chandra Trivedi, ABES Engg College, Ghazibad</b><br><br>
+                <b>- Dr. Alok Aggarwal, Professor &Director,JP Institute of Engineering and Technology
+                    Meerut</b><br><br>
+                <b>- Dr.Dilip Kumar Sharma,Institute of Engineering and TechnologyGLA University MATHURA</b><br><br>
+                <b>- Dr. B N Biswal, BEC, Bhubaneswar</b><br><br>
+                <b>- Dr. Sanjay Sengupta, CSIR, New Delhi</b><br><br>
+                <b>- Dr.NaeemHanoon, Malysia</b><br><br>
+                <b>- Dr. Kailash C Patidar, South Africa</b><br><br>
+                <b>- Prof. Chintan Bhatt, Chandubhai Patel Institute of Technology, Gujurat</b><br><br>
+                <b>- Dr. V Suma, Bangalore</b><br><br>
+                <b>- Dr. Srinivas Sethi, IGIT, Odisha</b><br><br>
+                <b>- Dr. H. Behera, Sambalpur</b><br><br>
+                <b>- Dr. Sachi Dehuri, Balasore</b><br><br>
+                <b>- Dr.Siressha Rodda, GITAM,Visakhapatnam</b><br><br>
+                <b>- Dr. Lalitha Bhaskari, Andhra University,Visakhapatnam</b><br><br>
+                <b>- Dr. JVR Murthy, JNTU Kakinada</b><br><br>
+                <b>- Dr K Srinivas, CMRIT</b><br><br>
+                <b>- Dr. A Sai Hanuman, GRIET,Hyderabad</b><br><br>
+                <b>- Dr.KudaNageswarRao,AndhraUniversity,Visakhapatnam</b><br><br>
+                <b>- Dr.Sanjeevikumar,India</b><br><br>
+                <b>- Dr. M. Ramakrishna Murthy,ANITS,Visakhapatnam</b><br><br>
+                <b>- Dr. Ch. Suresh,ANITS,Visakhapatnam</b><br><br>
+                <b>- Dr.PriteeParweker,ANITS,Visakhapatnam</b><br><br>
+                <b>- Dr. Soumya Ranjan Mishra,ANITS,Visakhapatnam</b><br><br>
+                <b>- Dr. Suresh Limkar,PUNE</b><br><br>
+                <b>- Dr.SubernaKumar,MVGR,Vizayanagaram</b><br><br>
+                <b>- Dr.B.TirumalaRao,JNTU, Vizayanagaram</b><br><br>
+                <b>- Dr.DebabrataSamanta,Dayananda Sagar College of Arts, Science and Commerce, Bangalore,
+                    India</b><br><br>
+                <b>- Dr. Divakar Yadav, Associate Professor, MMMUT, Gorakhpur,India</b><br><br>
+                <b>- Dr.AnujaArora , Jaypee Institute of Information Technology,Noida,India</b><br><br>
+                <b>- Dr. B. Vishnu Vardhan, JNTUH, Manthani</b><br><br>
+                <b>- Dr. S. Viswanadha Raju, JNTUH, Jagityal</b><br><br>
+                <b>- Dr. T. Venugopal, JNTUH, Jagityal</b><br><br>
+                <b>- Dr.D.Ramesh,JNTUH, Jagityal</b><br><br>
+                <b>- Dr.P. swetha, JNTUH, Jagityal</b><br><br>
+                <b>- Dr. P. Sammulal, JNTUH, Jagityal</b><br><br>
+                <b>- Dr. B. Satish Kumar, JNTUH, Jagityal</b><br><br>
+                <b>- Dr. G. Narsimha, JNTUH, Sulthanpur</b><br><br>
+                <b>- Dr.SahuChatrapathy, JNTUH, Jagityal</b><br><br>
+                <b>- Dr. B. V. Rama Naresh Yadav, JNTUH, Jagityal</b><br><br>
+                <b>- Dr. B. Kranthi Kumar, JNTUH, Jagityal</b><br><br>
+                <b>- Dr. S. S.Suresh Kumar, JNTUH, Jagityal</b><br><br>
+                <b>- Dr. M. Dhana Lakshmi, JNTUH, Jagityal</b><br><br>
+                <b>- Dr.G.Vishnu Murthy, CVSR</b><br><br>
+                <b>- Dr. Sandeep Rawat, CVSR</b><br><br>
+                <b>- Dr.Raghava V. Cherabuddi , CVR</b><br><br>
+                <b>- Dr. Y Rama Devi, CBIT</b><br><br>
+                <b>- Dr.VSK Reddy, MRCET</b><br><br>
+                <b>- Dr. V. A. Narayana, CMR</b><br><br>
+                <b>- Dr. Ch.Mallikarjuna Rao, GRIET</b><br><br>
+                <b>- Dr. V.V.S.S.S. Balaram, SRINIDHI</b><br><br>
+                <b>- Dr.PVS. Srinivas, SRINIDHI</b><br><br>
+                <b>- Dr.Kamalesh V N, SRINIDHI</b><br><br>
+                <b>- Dr. A. Jagan, BVRIT</b><br><br>
+                <b>- Dr. K. V. N. Sunitha, BVRIT</b><br><br>
+                <b>- Dr. B. Satyanarayana</b><br><br>
+                <b>- Dr. P. Vijayapal Reddy</b><br><br>
+                <b>- Dr. Y. Vijayalata</b><br><br>
+                <b>- Dr. N. Subhash Chandra</b><br><br>
+                <b>- Dr. A. Suresh Babu</b><br><br>
+                <b>- Dr. K. Srinivas</b><br><br>
+                <b>- Dr. N. Sandhya</b><br><br>
+                <b>- Dr. V.A. Narayana</b><br><br>
+                <b>- Dr. A. Brahmananda Reddy</b><br><br>
+                <b>- Dr. G. Madhu</b><br><br>
+                <b>- Dr. Nadipally Laxmi Manasa</b><br><br>
+                <b>- Dr. Sesham Anand</b><br><br>
+                <b>- Dr. C Sunil Kumar</b><br><br>
+                <b>- Dr. M. Balraju</b><br><br>
+                <b>- Dr. S. Nagaraju</b><br><br>
+                <b>- Dr. A P Siva Kumar</b><br><br>
+                <b>- Dr. I L Narasimha Rao</b><br><br>
+                <b>- Dr. Viswapathi</b><br><br>
+                <b>- Dr. Konda Srinivas</b><br><br>
+                <b>- Dr. Y. Vijaya lata, GRIET,Hyderabad</b><br><br>
+                <b>- Dr. CRK Reddy, MGIT</b><br><br>
+                <b>- Dr. K. Venkateswara Rao, CVR</b><br><br>
+                <b>- Dr. Rishi Sayal, Guru Nanak Institutions</b><br><br>
+                <b>- Prof. Neil Gogte, KMIT</b><br><br>
+                <b>- Dr. N Chandrasekhar Reddy, MLRIT</b><br><br>
+
+            </p>
+    </section>
+    <section class="displayImages">
+        <div class="container">
+            <div>
+                <ul class="iccii clearfix">
+                    <li>
+                        <figure class="iccii-photo">
+                            <img src="./Images/iccii_images/1.jpg" alt="image1">
+                        </figure>
+                    </li>
+                    <li>
+                        <figure class="iccii-photo">
+                            <img src="./Images/iccii_images/2.jpg" alt="image2">
+                        </figure>
+                    </li>
+                    <li>
+                        <figure class="iccii-photo">
+                            <img src="./Images/iccii_images/3.jpg" alt="image3">
+                        </figure>
+                    </li>
+                    <li>
+                        <figure class="iccii-photo">
+                            <img src="./Images/iccii_images/4.jpg" alt="image4">
+                        </figure>
+                    </li>
+                </ul>
+                <ul class="iccii clearfix">
+                    <li>
+                        <figure class="iccii-photo">
+                            <img src="./Images/iccii_images/5.jpg" alt="image5">
+                        </figure>
+                    </li>
+                    <li>
+                        <figure class="iccii-photo">
+                            <img src="./Images/iccii_images/9.jpg" alt="image6">
+                        </figure>
+                    </li>
+                    <li>
+                        <figure class="iccii-photo">
+                            <img src="./Images/iccii_images/10.jpg" alt="image7">
+                        </figure>
+                    </li>
+                    <li>
+                        <figure class="iccii-photo">
+                            <img src="./Images/iccii_images/11.jpg" alt="image8">
+                        </figure>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <footer class="container">
+        <div class="row">
+            <div class="col-sm-6">
+                <div class="row">
+                    <div class="col-sm-3 footLogo" style="margin-top: 2%">
+                        <a href="https://jntuh.ac.in/"><img src="Images/jntuhlogo.png" alt="JntuLogo"></a>
+                    </div>
+                    <div class="col-sm-9 counter" style="margin-top: 10%">
+                        <a href="https://www.webfreecounter.com/" target="_blank">
+                            <img src="https://www.webfreecounter.com/hit.php?id=gvxonqp&nd=6&style=1"
+                                alt="visitor counter">
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-6">
+                <div class="row " style="margin: 10% 0;">
+                    <div class="col-sm-6">
+                        <a href="http://www.iccii.net/images/jntuhlogo.png" style="color: #fff;" class="footLink">2020
+                            Â© All Rights Reserved</a>
+                    </div>
+                    <div class="col-sm-6">
+                        <a href="https://jntuh.ac.in/" style="color: #fff;">JNTUH, Main website</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </footer>
+
+
+
+
+    <script src="JavaScript/indexJs.js"></script>
+</body>
+
+</html>

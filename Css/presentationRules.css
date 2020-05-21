@@ -1,0 +1,35 @@
+.qlinks {
+    font-size: 110%;
+    position: relative;
+    text-decoration: none;
+    padding: 10px;
+    display: block;
+    overflow: hidden;
+    width: 110%;
+    margin: 0 auto 0 auto;
+    text-align: center;
+}
+.heading{
+    padding-top: 10%;
+}
+.qlinks:nth-child(1) {
+    margin-top: 10px;
+    margin-left: 0;
+}
+.qlinks:nth-child(2) {
+    margin-top: 6%;
+}
+.qlinks:nth-child(3) {
+    margin-top: 10%;
+}
+
+.qlinks:nth-child(4) {
+    margin-top: 6%;
+}
+.qlinks:nth-child(5) {
+    margin-top: 10%;
+}
+
+.qlinks:nth-child(6) {
+    margin-top: 6%;
+}
